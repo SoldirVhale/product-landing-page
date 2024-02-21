@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    display: flex;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 50px;
+    font-size: larger;
+}
+
+.break {
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+h2 {
+   padding: 20px 0 10px 0;
+   font-family: 'Courier New', Courier, monospace;
+   margin-top: 10px;
+   font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Bottone*/
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 6px;
+    background-color: #f36e6e ;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 1s;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="submit"]:hover {
+    background-color: red;
+    font-weight: bold;
+
+}
