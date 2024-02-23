@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color:blanchedalmond;
+}
+
 #header {
     display: flex;
     justify-content: space-around;
@@ -13,12 +17,14 @@
 .logo {
     width: 150px;
     display: flex;
+    border-radius: 100px;
 }
 
 nav > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 li {
@@ -42,12 +48,14 @@ a{
     padding: 10px;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 a:hover {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(205, 225, 255, 0.7);
     border-radius: 20px;
+    transition: background-color 1.5s;
 }
 
 h2 {
@@ -57,30 +65,151 @@ h2 {
    font-size: 40px;
 }
 
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+}
+
 .container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
 }
 
+/*Mail*/
+
+#email {
+    padding: 20px;
+    margin-left: -35px;
+}
+
+#mail-icon {
+    margin-left: 20px;
+    margin-top: 3px;
+    position: absolute;
+    font-size: 50px;
+}
 
 /*Bottone*/
 
 input[type="submit"] {
     margin-top: 10px;
     padding: 6px;
-    background-color: #f36e6e ;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     transition: background-color 1s;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: red;
+    background-color: rgb(205, 225, 255);
     font-weight: bold;
 
+}
+
+/*Informazioni del prodotto*/
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    row-gap: 60px;
+}
+
+p {
+    margin-top: -55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+#icon {
+    color: brown;
+    font-size: 60px;
+    margin-bottom: -40px;
+}
+
+/*YOUTUBE*/
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+iframe {
+    border: 20px solid burlywood;
+    border-radius: 20px;
+}
+
+
+
+/*PRICES*/
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.product > .level {
+    background-color: burlywood;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.level {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+ol li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 1s;
+    border-radius: 50px;
+    display: flex;
+    cursor: pointer;  
+}
+
+button:hover {
+    background-color: rgb(205, 225, 255);
+    font-weight: bold;
+    cursor: pointer;
 }
